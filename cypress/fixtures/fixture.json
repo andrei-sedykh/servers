@@ -1,0 +1,10 @@
+{
+  "email": "komandirontour+ask_ev@gmail.com",
+  "pass": "SbBAuW4ew@bC@gY",
+  "invalidPass": "Qwerty1234",
+  "shortPass": "Qwerty123",
+  "invalidEmail": "£@1.co",
+  "fakeEmail": "fake@email.co",
+  "forgotPasswordSentMessage": "We have sent you an email containing a temporary link, valid for 15 minutes, which will allow you to reset your password. Please check your spam folder if the email does not appear shortly."
+
+}
