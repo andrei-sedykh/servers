@@ -4,6 +4,7 @@
 * `cd servers`
 * `npm install`
 
-## Running / Development
+## Running tests
 
 * `npx cypress open`
+* `npx cypress run` for headless mode
