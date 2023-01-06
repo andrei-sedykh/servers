@@ -1,4 +1,5 @@
-#Quick start
+## Installation
 
-1. Install Cypress: npm install cypress --save-dev
-2. To run tests use: npx cypress open
+* `git clone <repository-url>` this repository
+* `cd servers`
+* `npm install`
