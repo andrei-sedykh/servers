@@ -1,4 +1,4 @@
 #Quick start
 
-Install Cypress: npm install cypress --save-dev
-To run tests use: npm run cypress:open
+1. Install Cypress: npm install cypress --save-dev
+2. To run tests use: npx cypress open
