@@ -25,6 +25,20 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import 'cypress-commands';
+import LoginPage from '../support/pages/loginPage.js';
+const loginPage = new LoginPage();
+
+Cypress.Commands.add('login', (email, password) => {
+      cy.visit('/');
+      loginPage.getEmail().clear().type(email);
+      loginPage.getPassword().clear().type(password);
+
+      cy.intercept('GET', '/rest/tickets*').as('tickets');
+      loginPage.getSignInButton().click( {force: true} );
+      cy.wait('@tickets').its('response.statusCode').should('eq', 200);
+
+      cy.get('span').contains('Dashboard').should('be.visible');
+});
 
 Cypress.Commands.add('clickOutside', () => {
   return cy.get('body').click(0, 0);
