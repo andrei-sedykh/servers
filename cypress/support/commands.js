@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import 'cypress-commands';
+
+Cypress.Commands.add('clickOutside', () => {
+  return cy.get('body').click(0, 0);
+});
