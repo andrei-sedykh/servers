@@ -14,7 +14,7 @@ describe('Logout spec', function() {
   });
   
   it('Should login successfully with valid credentials', function() {
-    dashboardPage.getUserSelect().click( {force: true} );
+    dashboardPage.getUserSelect(email).click( {force: true} );
 
     cy.intercept('DELETE', '/auth/logout').as('logout');
     dashboardPage.getLogoutButton().click();

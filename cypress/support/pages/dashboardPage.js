@@ -1,7 +1,6 @@
-import {email} from '../../fixtures/fixture.json';
 
 class DashboardPage {
-  getUserSelect() {
+  getUserSelect(email) {
     return cy.contains(email);
   }
   getProfileButton() {
