@@ -5,6 +5,24 @@
   "shortPass": "Qwerty123",
   "invalidEmail": "£@1.co",
   "fakeEmail": "fake@email.co",
-  "forgotPasswordSentMessage": "We have sent you an email containing a temporary link, valid for 15 minutes, which will allow you to reset your password. Please check your spam folder if the email does not appear shortly."
+  "forgotPasswordSentMessage": "We have sent you an email containing a temporary link, valid for 15 minutes, which will allow you to reset your password. Please check your spam folder if the email does not appear shortly.",
+  "testContact": {
+    "firstName": "Test FirstName",
+    "lastName": "Test LastName",
+    "middleName": "Test MiddleName",
+    "email": "test@email.com",
+    "secondaryEmail": "test2@email.com",
+    "phoneNumber": "+1 (234) 567-89-90",
+    "role": "Technical",
+    "company": "Servers.com",
+    "jobTitle": "QA",
+    "jobRole": "QA automation",
+    "nickname": "nickname",
+    "comments": "comments",
+    "contactDetails":{
+      "type": "URL",
+      "value": "https://portal.servers.com/profile/contacts/new"
+    }
+  }
 
 }
